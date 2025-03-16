@@ -1,0 +1,574 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <title>Movie Catalog</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+           <div class="logo-container"><h1 class="logo">MovieBash</h1></div> 
+           <div class="menu-container">
+            <ul class="menu-list">
+                <li><a class="menu-list-item active" href="index.html">Homepage</a></li>
+                <li><a class="menu-list-item" href="index2.html">Browse Movies</a></li>
+                <li class="menu-list-item">Movie Details</li>
+                <li class="menu-list-item">Upcoming Movies</li>
+                <li><a class="menu-list-item" href="admin.html" >Admin Page</a></li>
+            </ul>
+           </div> 
+           <div class="profile-container">
+            <img class="profile-picture" src="img/profile.jpg" alt="">
+            <div class="profile-text-container">
+                <span class="profile-text">Profile</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="toggle">
+                <i class="fa-solid fa-moon toggle-icon"></i>
+                <i class="fa-solid fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+        </div> 
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-house"></i>
+        <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+        <i class="left-menu-icon fa-solid fa-bars"></i>
+        <i class="left-menu-icon fa-solid fa-film"></i>
+        <i class="left-menu-icon fa-solid fa-user-tie"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Search Movies">
+                    <button type="Search">Search</button>
+                </form>
+            </div>
+            <div class="movie-list-container">
+                
+                <div class="movie-list-wrapper">
+                    <div class="main-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/moonlight_0.jpg" alt="">
+                            <span class="movie-list-item-title">Moonlight</span>
+                            <p class="movie-list-item-desc">A young African-American man grapples with his identity and sexuality while experiencing the everyday struggles of childhood, adolescence, and burgeoning adulthood.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/tenetposter.jpg" alt="">
+                            <span class="movie-list-item-title">TENET</span>
+                            <p class="movie-list-item-desc">The film follows a former CIA agent who is recruited into a secret organization, tasked with tracing the origin of objects that are traveling backward through time and their connection to an attack from the future to the present.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/empirestrikesback.jpg" alt="">
+                            <span class="movie-list-item-title">STAR WARS: TESB</span>
+                            <p class="movie-list-item-desc">The film concerns the continuing struggles of the Rebel Alliance against the Galactic Empire. During the film, Han Solo, Chewbacca, and Princess Leia Organa are being pursued across space by Darth Vader and his elite forces.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/spiderman2.jpg" alt="">
+                            <span class="movie-list-item-title">Spider-Man 2</span>
+                            <p class="movie-list-item-desc">Peter Parker struggles to balance his crime-fighting duties as Spider-Man with the demands of his normal life. He loses a job, faces financial difficulties, and struggles to attend his physics lectures at Columbia University on time.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/avengersEndgame.jpg" alt="">
+                            <span class="movie-list-item-title">Avengers: Endgame</span>
+                            <p class="movie-list-item-desc">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/downfall.jpg" alt="">
+                            <span class="movie-list-item-title">Downfall of Diddy</span>
+                            <p class="movie-list-item-desc">The Downfall of Diddy is a documentary series that provides an inside look at the fall of rap mogul P. Diddy,</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/oppenheimer.jpg" alt="">
+                            <span class="movie-list-item-title">Oppenheimer</span>
+                            <p class="movie-list-item-desc">The film follows the life of J. Robert Oppenheimer, the American theoretical physicist who helped develop the first nuclear weapons during World War II.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/thebatman.png" alt="">
+                            <span class="movie-list-item-title">The Batman</span>
+                            <p class="movie-list-item-desc">When a sadistic serial killer begins murdering key political figures in Gotham, the Batman is forced to investigate the city's hidden corruption and question his family's involvement.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/joker.jpg" alt="">
+                            <span class="movie-list-item-title">Joker</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/bladerunner.jpg" alt="">
+                            <span class="movie-list-item-title">Blade Runner: 2049</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/lordoftherings.jpg" alt="">
+                            <span class="movie-list-item-title">Lord of the Rings</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/backtothefuture.jpg" alt="">
+                            <span class="movie-list-item-title">Back to the future</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/thegodfather.jpg" alt="">
+                            <span class="movie-list-item-title">The Godfather</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/mywife.jpg" alt="">
+                            <span class="movie-list-item-title">My wife is Retarded</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <div class="movie-list-wrapper">
+                    <div class="main-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/deadpoolandwolverine_lob_crd_03.jpg" alt="">
+                            <span class="movie-list-item-title">Deadpool & Wolverine</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/Hitman-Movie-cover.jpg" alt="">
+                            <span class="movie-list-item-title">HITMAN</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/acrossthespider.jpg" alt="">
+                            <span class="movie-list-item-title">Spider-man: ATSV</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/challengers.jpeg" alt="">
+                            <span class="movie-list-item-title">Challengers</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/wild_robot_poster.jpg" alt="">
+                            <span class="movie-list-item-title">The Wild Robot</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/civilwar.jpg" alt="">
+                            <span class="movie-list-item-title">Civil War</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/dune2.jpg" alt="">
+                            <span class="movie-list-item-title">Dune part two</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/alien.jpg" alt="">
+                            <span class="movie-list-item-title">Alien: Romulus</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>                      
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            
+            <div class="movie-list-container">
+                
+                <div class="movie-list-wrapper">
+                    <div class="main-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/up.jpeg" alt="">
+                            <span class="movie-list-item-title">UP</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/toyStory.jpeg" alt="">
+                            <span class="movie-list-item-title">Toy Story</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/theboyandtheheron.jpg" alt="">
+                            <span class="movie-list-item-title">The boy and the heron</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/wreckItRalph.jpg" alt="">
+                            <span class="movie-list-item-title">Wreck-It-Ralph</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/thelionking.jpg" alt="">
+                            <span class="movie-list-item-title">The Lion King</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/kubo.jpg" alt="">
+                            <span class="movie-list-item-title">KUBO</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/kungfupanda.jpg" alt="">
+                            <span class="movie-list-item-title">Kung-Fu Panda</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/spiritedaway.jpg" alt="">
+                            <span class="movie-list-item-title">Spirited Away</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>    
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/mask.jpg" alt="">
+                            <span class="movie-list-item-title">Bat Man: TMTP</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/batman.jpg" alt="">
+                            <span class="movie-list-item-title">Bat Man</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/RIO.jpg" alt="">
+                            <span class="movie-list-item-title">RIO</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/bolt.jpg" alt="">
+                            <span class="movie-list-item-title">Bolt</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>  
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/httyd.jpg" alt="">
+                            <span class="movie-list-item-title">How to train your dragon</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>                
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                
+                <div class="movie-list-wrapper">
+                    <div class="main-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/moonlight_0.jpg" alt="">
+                            <span class="movie-list-item-title">Moonlight</span>
+                            <p class="movie-list-item-desc">A young African-American man grapples with his identity and sexuality while experiencing the everyday struggles of childhood, adolescence, and burgeoning adulthood.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/tenetposter.jpg" alt="">
+                            <span class="movie-list-item-title">TENET</span>
+                            <p class="movie-list-item-desc">The film follows a former CIA agent who is recruited into a secret organization, tasked with tracing the origin of objects that are traveling backward through time and their connection to an attack from the future to the present.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/empirestrikesback.jpg" alt="">
+                            <span class="movie-list-item-title">STAR WARS: TESB</span>
+                            <p class="movie-list-item-desc">The film concerns the continuing struggles of the Rebel Alliance against the Galactic Empire. During the film, Han Solo, Chewbacca, and Princess Leia Organa are being pursued across space by Darth Vader and his elite forces.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/spiderman2.jpg" alt="">
+                            <span class="movie-list-item-title">Spider-Man 2</span>
+                            <p class="movie-list-item-desc">Peter Parker struggles to balance his crime-fighting duties as Spider-Man with the demands of his normal life. He loses a job, faces financial difficulties, and struggles to attend his physics lectures at Columbia University on time.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/avengersEndgame.jpg" alt="">
+                            <span class="movie-list-item-title">Avengers: Endgame</span>
+                            <p class="movie-list-item-desc">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/downfall.jpg" alt="">
+                            <span class="movie-list-item-title">Downfall of Diddy</span>
+                            <p class="movie-list-item-desc">The Downfall of Diddy is a documentary series that provides an inside look at the fall of rap mogul P. Diddy,</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/oppenheimer.jpg" alt="">
+                            <span class="movie-list-item-title">Oppenheimer</span>
+                            <p class="movie-list-item-desc">The film follows the life of J. Robert Oppenheimer, the American theoretical physicist who helped develop the first nuclear weapons during World War II.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/thebatman.png" alt="">
+                            <span class="movie-list-item-title">The Batman</span>
+                            <p class="movie-list-item-desc">When a sadistic serial killer begins murdering key political figures in Gotham, the Batman is forced to investigate the city's hidden corruption and question his family's involvement.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/joker.jpg" alt="">
+                            <span class="movie-list-item-title">Joker</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/bladerunner.jpg" alt="">
+                            <span class="movie-list-item-title">Blade Runner: 2049</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/lordoftherings.jpg" alt="">
+                            <span class="movie-list-item-title">Lord of the Rings</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/backtothefuture.jpg" alt="">
+                            <span class="movie-list-item-title">Back to the future</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/thegodfather.jpg" alt="">
+                            <span class="movie-list-item-title">The Godfather</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/mywife.jpg" alt="">
+                            <span class="movie-list-item-title">My wife is Retarded</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                
+                <div class="movie-list-wrapper">
+                    <div class="main-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/moonlight_0.jpg" alt="">
+                            <span class="movie-list-item-title">Moonlight</span>
+                            <p class="movie-list-item-desc">A young African-American man grapples with his identity and sexuality while experiencing the everyday struggles of childhood, adolescence, and burgeoning adulthood.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/tenetposter.jpg" alt="">
+                            <span class="movie-list-item-title">TENET</span>
+                            <p class="movie-list-item-desc">The film follows a former CIA agent who is recruited into a secret organization, tasked with tracing the origin of objects that are traveling backward through time and their connection to an attack from the future to the present.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/empirestrikesback.jpg" alt="">
+                            <span class="movie-list-item-title">STAR WARS: TESB</span>
+                            <p class="movie-list-item-desc">The film concerns the continuing struggles of the Rebel Alliance against the Galactic Empire. During the film, Han Solo, Chewbacca, and Princess Leia Organa are being pursued across space by Darth Vader and his elite forces.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/spiderman2.jpg" alt="">
+                            <span class="movie-list-item-title">Spider-Man 2</span>
+                            <p class="movie-list-item-desc">Peter Parker struggles to balance his crime-fighting duties as Spider-Man with the demands of his normal life. He loses a job, faces financial difficulties, and struggles to attend his physics lectures at Columbia University on time.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/avengersEndgame.jpg" alt="">
+                            <span class="movie-list-item-title">Avengers: Endgame</span>
+                            <p class="movie-list-item-desc">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/downfall.jpg" alt="">
+                            <span class="movie-list-item-title">Downfall of Diddy</span>
+                            <p class="movie-list-item-desc">The Downfall of Diddy is a documentary series that provides an inside look at the fall of rap mogul P. Diddy,</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/oppenheimer.jpg" alt="">
+                            <span class="movie-list-item-title">Oppenheimer</span>
+                            <p class="movie-list-item-desc">The film follows the life of J. Robert Oppenheimer, the American theoretical physicist who helped develop the first nuclear weapons during World War II.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/thebatman.png" alt="">
+                            <span class="movie-list-item-title">The Batman</span>
+                            <p class="movie-list-item-desc">When a sadistic serial killer begins murdering key political figures in Gotham, the Batman is forced to investigate the city's hidden corruption and question his family's involvement.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/joker.jpg" alt="">
+                            <span class="movie-list-item-title">Joker</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/bladerunner.jpg" alt="">
+                            <span class="movie-list-item-title">Blade Runner: 2049</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/lordoftherings.jpg" alt="">
+                            <span class="movie-list-item-title">Lord of the Rings</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/backtothefuture.jpg" alt="">
+                            <span class="movie-list-item-title">Back to the future</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/thegodfather.jpg" alt="">
+                            <span class="movie-list-item-title">The Godfather</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/mywife.jpg" alt="">
+                            <span class="movie-list-item-title">My wife is Retarded</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                
+                <div class="movie-list-wrapper">
+                    <div class="main-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/moonlight_0.jpg" alt="">
+                            <span class="movie-list-item-title">Moonlight</span>
+                            <p class="movie-list-item-desc">A young African-American man grapples with his identity and sexuality while experiencing the everyday struggles of childhood, adolescence, and burgeoning adulthood.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/tenetposter.jpg" alt="">
+                            <span class="movie-list-item-title">TENET</span>
+                            <p class="movie-list-item-desc">The film follows a former CIA agent who is recruited into a secret organization, tasked with tracing the origin of objects that are traveling backward through time and their connection to an attack from the future to the present.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/empirestrikesback.jpg" alt="">
+                            <span class="movie-list-item-title">STAR WARS: TESB</span>
+                            <p class="movie-list-item-desc">The film concerns the continuing struggles of the Rebel Alliance against the Galactic Empire. During the film, Han Solo, Chewbacca, and Princess Leia Organa are being pursued across space by Darth Vader and his elite forces.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/spiderman2.jpg" alt="">
+                            <span class="movie-list-item-title">Spider-Man 2</span>
+                            <p class="movie-list-item-desc">Peter Parker struggles to balance his crime-fighting duties as Spider-Man with the demands of his normal life. He loses a job, faces financial difficulties, and struggles to attend his physics lectures at Columbia University on time.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/avengersEndgame.jpg" alt="">
+                            <span class="movie-list-item-title">Avengers: Endgame</span>
+                            <p class="movie-list-item-desc">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/downfall.jpg" alt="">
+                            <span class="movie-list-item-title">Downfall of Diddy</span>
+                            <p class="movie-list-item-desc">The Downfall of Diddy is a documentary series that provides an inside look at the fall of rap mogul P. Diddy,</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/oppenheimer.jpg" alt="">
+                            <span class="movie-list-item-title">Oppenheimer</span>
+                            <p class="movie-list-item-desc">The film follows the life of J. Robert Oppenheimer, the American theoretical physicist who helped develop the first nuclear weapons during World War II.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/thebatman.png" alt="">
+                            <span class="movie-list-item-title">The Batman</span>
+                            <p class="movie-list-item-desc">When a sadistic serial killer begins murdering key political figures in Gotham, the Batman is forced to investigate the city's hidden corruption and question his family's involvement.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/joker.jpg" alt="">
+                            <span class="movie-list-item-title">Joker</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/bladerunner.jpg" alt="">
+                            <span class="movie-list-item-title">Blade Runner: 2049</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/lordoftherings.jpg" alt="">
+                            <span class="movie-list-item-title">Lord of the Rings</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/backtothefuture.jpg" alt="">
+                            <span class="movie-list-item-title">Back to the future</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/thegodfather.jpg" alt="">
+                            <span class="movie-list-item-title">The Godfather</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-image" src="img/mywife.jpg" alt="">
+                            <span class="movie-list-item-title">My wife is Retarded</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

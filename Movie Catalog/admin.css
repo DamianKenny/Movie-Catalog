@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-size: 30px;
+    color: #1560BD;
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 30px;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.left-menu-icon{
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.container{
+    background-image: url('img/SignUpBackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: calc(100vh - 50px);
+    color: white;
+    padding: 20px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-right:  0;
+}
+
+.search form{
+    display: flex;
+    margin: 0;
+}
+
+.search input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search input:hover{
+    border: 1px solid #72a0d4;
+}
+
+.search button{
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background-color: #1560BD;
+
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a; /* Slightly darker header */
+    border-bottom: 2px solid #444;
+}
+
+header h1 {
+    color: #1560BD; /* Accent color for the header */
+}
+
+/* Form Styles */
+form {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form input,
+form textarea,
+form button {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input,
+form textarea {
+    background: #2a2a2a;
+    color: #fff;
+}
+
+form button {
+    background: #1560BD;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #3372be;
+}
+
+/* Movies Section */
+#movieList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.movie img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.movie h3 {
+    font-size: 18px;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.movie p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.movie button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.movie button:hover {
+    background: #ff856c;
+}
+
+.movie:hover {
+    transform: translateY(-5px);
+}
+
+/* Search Bar */
+#searchBar {
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 16px;
+}
+
+#searchBar::placeholder {
+    color: #aaa;
+}

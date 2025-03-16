@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <title>Movie Catalog</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+           <div class="logo-container"><h1 class="logo">DiddyFlix</h1></div> 
+           <div class="menu-container">
+            <ul class="menu-list">
+                <li><a class="menu-list-item active" href="index.html">Homepage</a></li>
+                <li><a class="menu-list-item" href="index2.html">Browse Movies</a></li>
+                <li class="menu-list-item">Movie Details</li>
+                <li class="menu-list-item">Upcoming Movies</li>
+                <li class="menu-list-item">Admin Page</li>
+            </ul>
+           </div> 
+           <div class="profile-container">
+            <img class="profile-picture" src="img/profile.jpg" alt="">
+            <div class="profile-text-container">
+                <span class="profile-text">Profile</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="toggle">
+                <i class="fa-solid fa-moon toggle-icon"></i>
+                <i class="fa-solid fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+        </div> 
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-house"></i>
+        <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+        <i class="left-menu-icon fa-solid fa-bars"></i>
+        <i class="left-menu-icon fa-solid fa-film"></i>
+        <i class="left-menu-icon fa-solid fa-user-tie"></i>
+    </div>
+    <div class="container">
+        <h1 style="text-align:center; padding: 20px;">Manage Movies</h1>
+
+        <form id="movieForm">
+            <h2>Add or Update Movie</h2>
+            <label for="movieTitle">Movie Title:</label>
+            <input type="text" id="movieTitle" placeholder="Enter movie title" required>
+      
+            <label for="movieDesc">Description:</label>
+            <textarea id="movieDesc" placeholder="Enter movie description" required></textarea>
+      
+            <label for="movieImage">Image URL:</label>
+            <input type="url" id="movieImage" placeholder="Enter image URL" required>
+      
+            <button type="submit" class="featured-button">Add/Update Movie</button>
+        </form>
+
+        <div class="search">
+      <input type="text" id="searchBar" placeholder="Search movies...">
+    </div>
+
+    <!-- Movie List -->
+    <div id="movieList" class="movie-list-container">
+      <!-- Movies will appear here dynamically -->
+    </div>
+  </div>
+      
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
